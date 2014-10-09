@@ -4,7 +4,7 @@
     <ProjectType>local</ProjectType>
     <ProjectVersion>7.10.377</ProjectVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>827e21d6-d2a9-457d-a845-a5f596b1ca27</ProjectGuid>
+    <ProjectGuid>99868368-c8b7-4b95-98a8-a0d8ac8d2f5b</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <AssemblyName>InternetTim</AssemblyName>
     <OutputType>WinExe</OutputType>
