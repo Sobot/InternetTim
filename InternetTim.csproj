@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>827e21d6-d2a9-457d-a845-a5f596b1ca27</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>InternetTim</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="Infragistics2.Win.Misc.v9.2" />
+    <Reference Include="Infragistics2.Win.UltraWinChart.v9.2" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v9.2" />
+    <Reference Include="GemBox.Spreadsheet" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="HtmlAgilityPack" />
+    <Reference Include="System.Web" />
+    <Reference Include="Infragistics2.Win.v9.2" />
+    <Reference Include="Infragistics2.Shared.v9.2" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="InternetTim\Registracija\PosaljiRegistraciju.cs" />
+    <Compile Include="InternetTim\Obavestenja\PrikaziObavestenje.cs" />
+    <Compile Include="InternetTim\NovaVerzija\InfoOProgramu.cs" />
+    <Compile Include="InternetTim\Komentari\AktuelniZadaci.cs" />
+    <Compile Include="InternetTim\Izvestaji\SpisakKorisnika.cs" />
+    <Compile Include="InternetTim\Izvestaji\OdDoPrijavljeniObjavljeni.cs" />
+    <Compile Include="InternetTim\Startovanje\SlikeUcitavanje.cs" />
+    <Compile Include="InternetTim\Problem\PosaljiProblem.cs" />
+    <Compile Include="InternetTim\Komentari\MojiIzvestajiSlanja.cs" />
+    <Compile Include="InternetTim\Komentari\DozvoleZaOpstine.cs" />
+    <Compile Include="InternetTim\Komentari\Chat1.cs" />
+    <Compile Include="InternetTim\Glasanje\ProveraProxyServera.cs" />
+    <Compile Include="InternetTim\Obavestenja\PodesavanjeOpstina.cs" />
+    <Compile Include="InternetTim\Komande\UradiKomandu.cs" />
+    <Compile Include="InternetTim\Komentari\IstorijaAdminPromena.cs" />
+    <Compile Include="InternetTim\Izvestaji\UzivoIzvestaji\UVSvest.cs" />
+    <Compile Include="InternetTim\Komentari\StanjePoslatihKomentara.cs" />
+    <Compile Include="InternetTim\Komentari\OpstinskiIzvestaji.cs" />
+    <Compile Include="InternetTim\Izvestaji\ZadnjaAktivnostKorisnika.cs" />
+    <Compile Include="InternetTim\GlavniProzor.cs" />
+    <Compile Include="InternetTim\Zastita\AktivacijaZastitePrograma.cs" />
+    <Compile Include="InternetTim\SpajanjeKorisnika\SKForma.cs" />
+    <Compile Include="InternetTim\Komentari\LinkKaVestima.cs" />
+    <Compile Include="InternetTim\Bodovanje\SredjivanjeBodovanja.cs" />
+    <Compile Include="InternetTim\NovaVerzija\VerzijaObavestenje.cs" />
+    <Compile Include="InternetTim\Glasanje\GlasanjeNaKomentareExterna.cs" />
+    <Compile Include="InternetTim\Obavestenja\SlanjeObavestenja.cs" />
+    <Compile Include="InternetTim\Komentari\GramatickeGreske.cs" />
+    <Compile Include="InternetTim\Komentari\GGPrikaz.cs" />
+    <Compile Include="InternetTim\Komentari\DodatnaVest.cs" />
+    <Compile Include="InternetTim\Komentari\BazaMojiKomentari.cs" />
+    <Compile Include="InternetTim\Properties\Resources.cs" />
+    <Compile Include="InternetTim\Obavestenja\ObavestenjaSaServera.cs" />
+    <Compile Include="InternetTim\Komentari\ObjavljenKomentarPrikaz.cs" />
+    <Compile Include="InternetTim\Glasanje\VestiPrikazRealnihKomentara.cs" />
+    <Compile Include="InternetTim\Glasanje\UnosLinkaZaGlasanje.cs" />
+    <Compile Include="InternetTim\Dozvole\VidljivostOpcija.cs" />
+    <Compile Include="InternetTim\Zastita\PotvrdaGlavneSifre.cs" />
+    <Compile Include="InternetTim\Properties\Settings.cs" />
+    <Compile Include="InternetTim\Komentari\MojaSugestija.cs" />
+    <Compile Include="InternetTim\Izvestaji\UzivoIzvestaji\UzivoVestiStatsKomentari.cs" />
+    <Compile Include="InternetTim\Glasanje\PrikazPojedinacnogKomentara.cs" />
+    <Compile Include="InternetTim\Obavestenja\PrikazPorukaBaza.cs" />
+    <Compile Include="InternetTim\Komentari\TwitNalozi.cs" />
+    <Compile Include="InternetTim\Komentari\MiniVest.cs" />
+    <Compile Include="InternetTim\Program.cs" />
+    <Compile Include="InternetTim\Komentari\UnosKomentara.cs" />
+    <EmbeddedResource Include="InternetTim.Komentari.OpstinskiIzvestaji.resources" />
+    <EmbeddedResource Include="InternetTim.Komentari.TwitNalozi.resources" />
+    <EmbeddedResource Include="InternetTim.Komande.UradiKomandu.resources" />
+    <EmbeddedResource Include="InternetTim.Registracija.PosaljiRegistraciju.resources" />
+    <EmbeddedResource Include="InternetTim.Komentari.StanjePoslatihKomentara.resources" />
+    <EmbeddedResource Include="InternetTim.Komentari.AktuelniZadaci.resources" />
+    <EmbeddedResource Include="InternetTim.Komentari.MojiIzvestajiSlanja.resources" />
+    <EmbeddedResource Include="InternetTim.Komentari.BazaMojiKomentari.resources" />
+    <EmbeddedResource Include="InternetTim.Glasanje.PrikazPojedinacnogKomentara.resources" />
+    <EmbeddedResource Include="InternetTim.Izvestaji.ZadnjaAktivnostKorisnika.resources" />
+    <EmbeddedResource Include="InternetTim.Izvestaji.UzivoIzvestaji.UVSvest.resources" />
+    <EmbeddedResource Include="InternetTim.Glasanje.ProveraProxyServera.resources" />
+    <EmbeddedResource Include="InternetTim.Obavestenja.PrikazPorukaBaza.resources" />
+    <EmbeddedResource Include="InternetTim.Zastita.AktivacijaZastitePrograma.resources" />
+    <EmbeddedResource Include="InternetTim.Komentari.GramatickeGreske.resources" />
+    <EmbeddedResource Include="InternetTim.Komentari.GGPrikaz.resources" />
+    <EmbeddedResource Include="InternetTim.Izvestaji.SpisakKorisnika.resources" />
+    <EmbeddedResource Include="InternetTim.Zastita.PotvrdaGlavneSifre.resources" />
+    <EmbeddedResource Include="InternetTim.Komentari.MojaSugestija.resources" />
+    <EmbeddedResource Include="InternetTim.Komentari.LinkKaVestima.resources" />
+    <EmbeddedResource Include="InternetTim.Komentari.DozvoleZaOpstine.resources" />
+    <EmbeddedResource Include="InternetTim.Komentari.MiniVest.resources" />
+    <EmbeddedResource Include="InternetTim.Komentari.Chat1.resources" />
+    <EmbeddedResource Include="InternetTim.Dozvole.VidljivostOpcija.resources" />
+    <EmbeddedResource Include="InternetTim.SpajanjeKorisnika.SKForma.resources" />
+    <EmbeddedResource Include="InternetTim.NovaVerzija.InfoOProgramu.resources" />
+    <EmbeddedResource Include="InternetTim.Izvestaji.UzivoIzvestaji.UzivoVestiStatsKomentari.resources" />
+    <EmbeddedResource Include="InternetTim.Izvestaji.OdDoPrijavljeniObjavljeni.resources" />
+    <EmbeddedResource Include="InternetTim.Glasanje.GlasanjeNaKomentareExterna.resources" />
+    <EmbeddedResource Include="InternetTim.Properties.Resources.resources" />
+    <EmbeddedResource Include="InternetTim.Obavestenja.PrikaziObavestenje.resources" />
+    <EmbeddedResource Include="InternetTim.Startovanje.SlikeUcitavanje.resources" />
+    <EmbeddedResource Include="InternetTim.Obavestenja.SlanjeObavestenja.resources" />
+    <EmbeddedResource Include="InternetTim.Komentari.UnosKomentara.resources" />
+    <EmbeddedResource Include="InternetTim.Komentari.DodatnaVest.resources" />
+    <EmbeddedResource Include="InternetTim.exe.licenses" />
+    <EmbeddedResource Include="InternetTim.NovaVerzija.VerzijaObavestenje.resources" />
+    <EmbeddedResource Include="InternetTim.Komentari.ObjavljenKomentarPrikaz.resources" />
+    <EmbeddedResource Include="InternetTim.Komentari.IstorijaAdminPromena.resources" />
+    <EmbeddedResource Include="InternetTim.Obavestenja.PodesavanjeOpstina.resources" />
+    <EmbeddedResource Include="InternetTim.Glasanje.UnosLinkaZaGlasanje.resources" />
+    <EmbeddedResource Include="InternetTim.GlavniProzor.resources" />
+    <EmbeddedResource Include="InternetTim.Problem.PosaljiProblem.resources" />
+    <EmbeddedResource Include="InternetTim.Obavestenja.ObavestenjaSaServera.resources" />
+    <EmbeddedResource Include="InternetTim.Glasanje.VestiPrikazRealnihKomentara.resources" />
+    <EmbeddedResource Include="InternetTim.Bodovanje.SredjivanjeBodovanja.resources" />
+  </ItemGroup>
+</Project>
